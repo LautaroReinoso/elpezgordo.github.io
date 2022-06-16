@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El pez gordo</title>
+
+    <link rel="stylesheet" href="/sass/custom.css">
+    <script src="https://kit.fontawesome.com/a14375a376.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ 
+  <div id="ventana">
+    <img id="close" src="/img/icons/xmark-solid.svg" class="img-fluid close">
+  </div>
+
+  <main class="container-fluid p-0">
+    <div class="container-fluid p-0"> 
+        <nav class="navbar navbar-expand-md  ">
+            <div class="container-fluid">
+              <a class="navbar-brand text-decoration-none" href="#">
+                  <img src="/img/logo.png" class="img-fluid elPezGordo " width="65px" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item ">
+                    <a class="nav-link active text-white" aria-current="page" href="#cañas">Cañas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" href="#reels">Reeles</a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#anzuelos">Anzuelos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Accesorios
+                    </a>
+                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item  text-white" href="#">Camping</a></li>
+                      <li><a class="dropdown-item " href="#"></a></li>
+                      <li><hr class="dropdown-divider "></li>
+                      <li><a class="dropdown-item " href="#"></a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-white text-white" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+        </nav> 
+    </div>
+    
+    <!-- imagen portada -->
+      <img src="/img/portada.jpg" class="img-fluid img-portada" alt="">
+
+      <!-- texto portada y submenú -->
+     <div class=" container-fluid row vh-100 d-none d-lg-flex">
+       <div id="elPezGordo" class="pt-5 col-lg-6 d-flex justify-content-center  ">
+          <h2 class="text-white pt-5">El pez Gordo</h2>
+
+       </div>
+       <div id="articulos" class="col-lg-6 d-flex justify-content-center align-items-end pb-5 mb-5">
+        <h3 class="text-white pb-5">Artículos de  <p>pezca y camping</p></h3>
+       </div>
+     </div>
+    <!-- iconos menú -->
+    <div class="container-fluid  row d-none d-lg-flex justify-content-center m-0 p-0">
+      <a href="#cañas" class="card col-lg-2 m-0 p-0 menu ">
+        <div class="d-flex justify-content-center pt-5">
+        <img class="img-fluid" src="/img/icons/cañas.png" width="80px" alt="cañas">
+        </div>
+        <div class="card-body">
+          <h5 class="text-center">Cañas</h5>
+        </div>
+      </a>
+      <a href="#reels" class="card  menu col-lg-2 mx-3 p-0">
+        <div class="d-flex justify-content-center pt-5">
+        <img src="/img/icons/reel.png" width="80px" alt="">
+      </div>
+        <div class="card-body">
+          <h5 class="text-center">Reels</h5>
+        </div>
+      </a>
+      <a href="#anzuelos" class="card menu col-lg-2 mx-3 p-0">
+        <div class="d-flex justify-content-center pt-5">
+        <img src="/img/icons/anzuelo.png" width="80px" alt="">
+      </div>
+        <div class="card-body">
+          <h5 class="text-center">Anzuelos</h5>
+        </div>
+      </a>
+    </div>
+    <!-- cañas -->
+    <div id="cañas" class="container my-5 mt-5 pt-5 mt-md-1 pt-md-1 ">
+      <h3  id="cañas" class="text-primary fw-bold mt-5 pt-5 mt-md-0 pt-md-0">Cañas</h3>
+    </div>
+    
+    <div id="galeriaCañas" class="container-fluid d-flex justify-content-center row p-0 m-0 galerias">
+
+    </div>
+  
+    </div>
+    <!-- reeles -->
+    <div class="container my-5">
+  
+      <h3 id="reels" class="text-primary fw-bold">Reels</h3>
+
+    </div>
+    <div id="galeriaReels" class="container-fluid d-flex justify-content-center row p-0 m-0 galerias">
+
+    </div>
+    
+    <!-- anzuelos -->
+
+    <div class="container my-5">
+      <h3 id="anzuelos" class="text-primary fw-bold">Anzuelos</h3>
+    </div>
+    <div id="galeriaAnzuelos" class="container-fluid d-flex justify-content-center row p-0 m-0  galerias">
+
+    </div>
+
+    </div>
+    
+    
+    
+    <!-- carrousel "recibimos tarjetas" -->
+
+    <div class="container d-flex justify-content-center mt-5 ">
+      <div class="">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide container-fluid" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner container-fluid">
+            <div class="container-fluid carousel-item active  " data-bs-interval="10000">
+              <div class="d-flex justify-content-center slider">
+                <img src="/img/slider/tarjetas.svg" class="d-block w-25 mb-md-5 pb-5 mb-sm-3"  alt="...">
+              </div>
+              <div class="carousel-caption mt-5 bt-5 ">
+                <h5 class="mt-5 pt-5">Paga con tarjeta o en efectivo </h5>
+                <p class="d-none d-md-block">Recibimos todas las tarjetas</p>
+              </div>
+            </div>
+            <div class="carousel-item container-fluid" data-bs-interval="2000">
+              <div class="d-flex justify-content-center slider ">
+              <img src="/img/slider/camion.svg" class="d-block w-25 mb-md-5 pb-5 mb-sm-3 " alt="...">
+            </div>
+              <div class="carousel-caption mt-5 bt-5">
+                <h5>Envíos a todo el país</h5>
+                <p class="d-none d-md-block">Enviamos a todo el país de manera rápida y eficaz</p>
+              </div>
+            </div>
+            <div class="carousel-item container-fluid">
+              <div class="d-flex justify-content-center slider">
+              <img src="/img/slider/candado.svg" class="d-block w-25 mb-md-5 pb-5 mb-sm-3 " width="30%" alt="...">
+            </div>
+              <div class="carousel-caption mt-5 bt-5">
+                <h5>Compra segura</h5>
+                <p class="d-none d-md-block">Tu compra es segura y rápida.</p>
+              </div>
+            </div>
+          </div>
+      <!--     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+        </div>
+      </div>
+    </div>
+</main>
+     <footer class="container-fluid bg-primary p-4">
+        <div class="row d-flex  p-0 ">
+          <!-- vacío -->
+          <div class="col-12 col-md-4 col-lg-2 d-flex flex-column ">
+          
+          </div>
+          <!-- redes sociales  -->
+          <div class="col-12 col-md-4 col-lg-3 pb-5 pb-md-0 d-flex flex-column  d-flex justify-content-center">
+            <div class="text-white">
+              <p class="d-flex justify-content-center fw-bold">Redes</p>
+            </div>
+            <div class="container-fluid text-white  p-0">
+              <div class="row m-0">
+                <div class="col-2 d-flex justify-content-center align-items-center p-0 m-0">
+                  <img src="/img/icons/footer/insFooter.svg" class="img-fluid " width="50%" alt="">
+                </div>
+                <div  class="col-8 d-flex justify-content-center align-items-center">
+                  <p class=" p-0 m-0 fs-6 d-flex justify-content-center align-items-center">@Elpezgordo</p>
+                </div>
+              </div>
+            
+              <div class="row m-0">
+                <div class="col-2 d-flex justify-content-center align-items-center  p-0 m-0">
+                <img src="/img/icons/footer/fbFooter.svg" class="img-fluid " width="50%" alt="">
+                </div>
+             
+                <div class="col-8  d-flex justify-content-center align-items-center">
+                <p class="p-0 m-0 fs-6 d-flex justify-content-center align-items-center">El pez Gordo</p>
+                </div>
+             </div>
+            </div>
+          </div>
+         <!--   mail,telefonos  -->
+         <div class="col-12 col-md-4 col-lg-3 pb-5 pb-md-0 d-flex flex-column  d-flex justify-content-center">
+          <div class="text-white">
+            <p class="d-flex justify-content-center fw-bold">Contacto</p>
+          </div>
+          <div class="container-fluid text-white p-0">
+            <div class="row m-0">
+              <div class="col-2 d-flex justify-content-center align-items-center p-0 m-0">
+                <img src="/img/icons/footer/wpFooter.svg" class="img-fluid " width="50%" alt="">
+              </div>
+              <div class="col-8 d-flex justify-content-center align-items-center">
+                <p class=" p-0 m-0 fs-6 d-flex justify-content-center align-items-center">+5493517131648</p>
+              </div>
+            </div>
+          
+            <div class="row m-0">
+              <div class="col-2 d-flex justify-content-center align-items-center p-0 m-0">
+              <img src="/img/icons/footer/gmFooter.svg" class="img-fluid " width="50%" alt="">
+              </div>
+           
+              <div class="col-8 d-flex justify-content-center align-items-center">
+              <p class="p-0 m-0 fs-6 d-flex justify-content-center align-items-center">elpezgordo@gmail.com</p>
+              </div>
+           </div>
+          </div>
+        </div>
+
+
+    
+         
+           <!-- dirección - horarios  -->
+          <div class="col-12 col-lg-3 pb-5  pb-md-0 d-flex flex-column d-flex justify-content-center ">
+            <div class="text-white d-lg-block d-md-flex justify-content-center">
+              <div class="text-white  p-0">
+                <p class="d-flex justify-content-center fw-bold">Dirección</p>
+              </div>
+              <div class="mx-1 px-0 row justify-content-center align-items-center">
+                <p class="d-flex justify-content-center align-items-center fs-6 p-0 m-0">Piedra Labrada 8420 </p>
+                <p class="d-flex justify-content-center align-items-center fs-6 p-0 m-0">Argüello, Córdoba</p>
+               </div>
+            </div>
+           
+          </div>
+          <div class="row col-12 pt-0 pt-md-3 p-0">
+            <div class="d-flex justify-content-center align-items-center">
+              <p class="text-white m-0 p-0 fs-7">©copyright</p>
+            </div>
+          </div>
+        </div>
+    </footer>
+    <div class="fixed-bottom btn-wsp bottom">
+        
+      <a href="https://api.whatsapp.com/send?phone=5493517131648"  target="_blank">
+   
+          <img src="/img/icons/whatsapp-brands.svg" class="img-fluid" >
+  
+      </a>
+    </div>
+
+    <script src="/js/productos.js"></script>
+    <script src="/js/animation.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

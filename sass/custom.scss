@@ -1,0 +1,167 @@
+$primary: #13324B;
+
+.btn-wsp {
+    width: 40px;
+    left: 100%;
+    margin: 4rem 4rem;
+    padding: 5px;
+    background: green;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px 3px rgba($color: #000000, $alpha: 0.3) ;
+}
+
+.btn-wsp:hover{
+    width: 42px;
+    box-shadow: none;
+    border: #000000;
+    color: #000000;
+}
+.elPezGordo{
+    padding: 2px;
+}
+.elPezGordo:hover{
+    padding: 0px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 1px 1px rgba($color: #000000, $alpha: 0.3);
+
+}
+
+
+
+.producto:hover {
+    box-shadow: 0 0 5px 5px rgba($color: #acbee6, $alpha: 0.3);
+}
+.img-product {
+    width: 16rem;
+}
+
+#galeria {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.slider {
+    flex: auto;
+    width: 350px;
+    height: auto;
+    background-color: #cbcbcb;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px 40px;
+    border: #9e9e9e;
+    border-radius: 20px;
+    box-shadow: -3px 3px 3px 0px rgba($color: #000000, $alpha: 0.2)
+}
+
+.ventanaModal {
+
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: auto;
+    left: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.positionProduct{
+
+    justify-content: center;
+    align-items: center;
+}
+.positionD{
+    
+    width: auto;
+    height: auto;
+}
+
+.close {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 0%; 
+    margin: 30px 60px 0px;
+    width: 20px;
+    z-index: 1;
+    visibility: hidden;
+
+}
+
+.close:hover {
+
+    width: 22px;
+  
+}
+
+
+
+.img-portada {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.carta {
+    background-color: #fff;
+  
+}
+.menu {
+    box-shadow: -3px 3px 3px 0px rgba($color: #000000, $alpha: 0.2)
+}
+.menu:hover {
+    background-color: rgba($color: #13324B, $alpha: 0.2);
+    animation: mg-ani 3s ease 0,5 1 normal;
+   
+}
+
+@keyframes mg-ani {
+    0% {
+        background-color: #fff;
+    }
+    100% {
+        background-color: rgba($color: #13324B, $alpha: 0.2)
+    }
+}
+
+
+@media screen and (max-width: 450px ) {
+    .ventanaModal {
+        width: 100vw;
+        height: 100vh;
+        padding: 10px;
+        margin: 0;
+        overflow: auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+      
+    };
+    .positionProduct{
+        height: auto;
+    };
+    .positionD {
+        height: 60px;
+ 
+        overflow-y: scroll;
+        
+        border-radius: 20px;
+    
+    };
+    .close {
+        position:absolute;
+        top: 0;
+        right: 0;
+        padding: 0%; 
+        margin: 15px 30px 0px;
+        width: 20px;
+        z-index: 1;
+        visibility: hidden;
+    
+    }
+  
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
