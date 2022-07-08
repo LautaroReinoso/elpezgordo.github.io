@@ -41,11 +41,10 @@
                     <a class="nav-link dropdown-toggle active text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Accesorios
                     </a>
-                    <ul class="dropdown-menu " aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item  text-white" href="#">Camping</a></li>
-                      <li><a class="dropdown-item " href="#"></a></li>
-                      <li><hr class="dropdown-divider "></li>
-                      <li><a class="dropdown-item " href="#"></a></li>
+                    <ul class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
+                     <!--  <li><a class="dropdown-item  text-white d-flex justify-content-center" href="#">Camping</a></li> -->
+                      
+                      <li><a class="dropdown-item text-white d-flex justify-content-center" href="#">Cajas</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -59,7 +58,10 @@
     </div>
     
     <!-- imagen portada -->
+   <div class="container-fluid m-0 p-0">
       <img src="/img/portada.jpg" class="img-fluid img-portada" alt="">
+    </div>
+    
 
       <!-- texto portada y submenú -->
      <div class=" container-fluid row vh-100 d-none d-lg-flex">
@@ -118,6 +120,14 @@
 
     </div>
     
+    <!-- señuelos -->
+
+    <div class="container my-5">
+      <h3 id="senuelos" class="text-primary fw-bold">Señuelos</h3>
+    </div>
+    <div id="galeriaSenuelos" class="container-fluid d-flex justify-content-center row p-0 m-0  galerias">
+
+    </div>
     <!-- anzuelos -->
 
     <div class="container my-5">
@@ -128,6 +138,15 @@
     </div>
 
     </div>
+     <!-- cajas -->
+     <div class="container my-5">
+  
+      <h3 id="cajas" class="text-primary fw-bold">Cajas</h3>
+
+    </div>
+    <div id="galeriaCajas" class="container-fluid d-flex justify-content-center row p-0 m-0 galerias">
+
+    </div>
     
     
     
@@ -135,13 +154,13 @@
 
     <div class="container d-flex justify-content-center mt-5 ">
       <div class="">
-        <div id="carouselExampleDark" class="carousel carousel-dark slide container-fluid" data-bs-ride="carousel">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-          <div class="carousel-inner container-fluid">
+          <div class="carousel-inner ">
             <div class="container-fluid carousel-item active  " data-bs-interval="10000">
               <div class="d-flex justify-content-center slider">
                 <img src="/img/slider/tarjetas.svg" class="d-block w-25 mb-md-5 pb-5 mb-sm-3"  alt="...">
@@ -272,8 +291,12 @@
   
       </a>
     </div>
-
-    <script src="/js/productos.js"></script>
+    <script src="/js/cajas.js" ></script>
+    <script src="/js/anzuelos.js" ></script>
+    <script src="/js/zenuelos.js" ></script>
+    <script src="/js/cañas.js" ></script>
+    <script src="/js/reel.js" ></script>
+    <script src="/js/main.js" ></script>
     <script src="/js/animation.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
